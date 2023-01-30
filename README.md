@@ -38,6 +38,7 @@ Local AD credentials
 
 ## ADSyncQuery / adconnectdump.py
 Note: as-is this will work just againt the standard configuration with NT SERVICE\ADSync virtual service account. Remember to check the ADSYnc folder existence before launching it.
+
 You should call `adconnectdump.py` from Windows. It will dump the Azure AD connect credentials over the network similar to secretsdump.py (you also will need to have [impacket](https://github.com/SecureAuthCorp/impacket) and `pycryptodomex` installed to run this). ADSyncQuery.exe should be in the same directory as it will be used to parse the database that is downloaded (this requires MSSQL LocalDB installed on your host).
 
 ![dump example](exampledump.png)
